@@ -1,0 +1,44 @@
+//Q58: Find the maximum and minimum element in an array.
+
+/*
+Sample Test Cases:
+Input 1:
+5
+2 9 1 4 7
+Output 1:
+Max=9, Min=1
+
+Input 2:
+3
+10 10 10
+Output 2:
+Max=10, Min=10
+
+*/
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int A[n];
+    for(int i = 0; i<n; i++)
+    {
+        scanf("%d", &A[i]);
+    }
+    int mx,mn;
+    mx = mn = A[1];
+    for(int i = 0; i<n; i++)
+    {
+        if(A[i]>mx)
+        {
+            mx = A[i];
+        }
+        else if (A[i]<mn)
+        {
+            mn = A[i];
+        }
+        
+    }
+    printf("Max=%d, Min=%d\n",mx,mn);
+}
