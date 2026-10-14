@@ -17,6 +17,7 @@ int main()
     int n,k;
     scanf("%d %d",&n,&k);
     int a[n][k];
+    int b[n];
     for(int i = 0; i<n; i++)
     {
         for(int j = 0; j < k; j++)
@@ -31,7 +32,8 @@ int main()
         {
             sum += a[i][j];
         }
-        printf("%d ",sum);
+        b[i] = sum;
+        printf("%d ",b[i);
     }
     printf("\n");
 }
