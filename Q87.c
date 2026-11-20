@@ -17,7 +17,7 @@ int main() {
     int spaces = 0, digits = 0, special = 0;
 
     fgets(s, sizeof(s), stdin);
-    s[strcspn(s, "\n")] = '\0';   // remove trailing newline
+    s[strcspn(s, "\n")] = '\0';
 
     for (int i = 0; s[i] != '\0'; i++) {
         if (s[i] == ' ')
